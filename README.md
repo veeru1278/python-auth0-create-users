@@ -1,4 +1,4 @@
-<h3>This repo has two utility<h3> 
+<h3>This repo has two utility</h3> 
 
 1. auth0_create_user.py which create user in auth0 account using auth0 management API
 
