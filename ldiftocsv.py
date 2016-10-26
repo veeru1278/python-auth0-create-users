@@ -47,7 +47,7 @@ def main():
 	attrs=['uid','cn', 'sn', 'securityQuestionAnswer', 'userPassword']
 	# This function converts ldif data in python dictionay resource
 	res=ldif_dict(host, dn, pw, base_dn, filter, attrs)
-    # This function Parse the resource (res) and convert into csv and transfre data to postgres
+        # This function Parse the resource (res) and convert into csv and transfre data to postgres
 	csv_postgres(res)
 
 
