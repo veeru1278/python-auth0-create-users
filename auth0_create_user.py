@@ -8,7 +8,7 @@ import jwt
 
 
 
-def create_payload(domain):	
+def create_payload():	
 	#Use your own payload
 	payload={
 	 "aud": "n3P1N0hxICmzN259aCC6j8IvFmi80oEy",
@@ -67,7 +67,7 @@ def create_user(token, domain):
 def main():
     domain='sso1.auth0.com'
     secret='CLIENT_SECRET_KEY'
-    payload=create_payload(domain)
+    payload=create_payload()
     token=create_jwt(payload, secret)
     create_user(token, domain)
 
